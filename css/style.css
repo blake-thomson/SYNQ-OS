@@ -2309,6 +2309,41 @@ p {
   border: 0;
 }
 
+.vsl-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  border: 1px solid rgba(201, 168, 76, 0.15);
+  border-radius: 12px;
+  gap: 16px;
+}
+
+.vsl-placeholder__icon {
+  width: 72px;
+  height: 72px;
+  opacity: 0.9;
+  transition: transform 0.3s ease;
+}
+
+.vsl-placeholder:hover .vsl-placeholder__icon {
+  transform: scale(1.1);
+}
+
+.vsl-placeholder__text {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.875rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
 /* --- Video Testimonial Section --- */
 .video-testimonial {
   max-width: 900px;
