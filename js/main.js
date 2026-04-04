@@ -75,6 +75,7 @@ document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale, 
 // --- Animated Counters ---
 function animateCounter(el) {
   const target = parseInt(el.getAttribute('data-target'), 10);
+  const prefix = el.getAttribute('data-prefix') || '';
   const suffix = el.getAttribute('data-suffix') || '';
   const duration = 1800;
   const startTime = performance.now();
@@ -87,11 +88,19 @@ function animateCounter(el) {
     const elapsed = currentTime - startTime;
     const progress = Math.min(elapsed / duration, 1);
     const value = Math.round(easeOutExpo(progress) * target);
-    el.textContent = value;
+    if (prefix || suffix) {
+      el.textContent = prefix + value + suffix;
+    } else {
+      el.textContent = value;
+    }
     if (progress < 1) {
       requestAnimationFrame(update);
     } else {
-      el.textContent = target;
+      if (prefix || suffix) {
+        el.textContent = prefix + target + suffix;
+      } else {
+        el.textContent = target;
+      }
     }
   }
 
@@ -108,7 +117,7 @@ const counterObserver = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.3 });
 
-document.querySelectorAll('.stats, .results-stats').forEach(el => {
+document.querySelectorAll('.stats, .results-stats, .growth-grid').forEach(el => {
   counterObserver.observe(el);
 });
 
@@ -439,3 +448,20 @@ void main(void) {
   }, { threshold: 0 });
   observer.observe(canvas);
 })();
+
+// --- VSL Play Button ---
+const vslPlayBtn = document.getElementById('vslPlayBtn');
+const vslVideo = document.getElementById('vslVideo');
+if (vslPlayBtn && vslVideo) {
+  vslPlayBtn.addEventListener('click', () => {
+    vslVideo.classList.toggle('playing');
+    // When a real video URL is added, this is where you'd
+    // create/show an iframe or trigger video playback.
+    // For now it toggles the play button visibility.
+  });
+}
+
+// --- Re-observe new reveal elements (for service detail pages) ---
+document.querySelectorAll('.service-detail__header.reveal, .service-detail__grid.stagger-children, .service-detail__steps.stagger-children, .service-detail__diff.stagger-children').forEach(el => {
+  revealObserver.observe(el);
+});

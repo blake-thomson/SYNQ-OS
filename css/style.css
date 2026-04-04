@@ -2277,3 +2277,703 @@ p {
     overflow: hidden;
   }
 }
+
+/* ===================================================
+   NEW SECTIONS — VSL, SaaS Graphics, Growth Cards,
+   Service Detail Pages, Dashboard Mockup
+   =================================================== */
+
+/* --- SaaS Decorative Orbs (global) --- */
+.vsl-orb,
+.growth-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.vsl-orb--1 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(201,168,76,0.12) 0%, transparent 70%);
+  top: -10%;
+  right: -10%;
+  animation: aurora-float 14s ease-in-out infinite;
+}
+
+.vsl-orb--2 {
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(201,168,76,0.08) 0%, transparent 70%);
+  bottom: -5%;
+  left: -5%;
+  animation: aurora-float 18s ease-in-out infinite 3s;
+}
+
+.growth-orb--1 {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(201,168,76,0.1) 0%, transparent 70%);
+  top: -15%;
+  left: -10%;
+  animation: aurora-float 16s ease-in-out infinite;
+}
+
+.growth-orb--2 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 70%);
+  bottom: -10%;
+  right: -5%;
+  animation: aurora-float 20s ease-in-out infinite 5s;
+}
+
+/* --- VSL Section --- */
+.vsl-section {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.vsl-header {
+  margin-bottom: 48px;
+}
+
+.vsl-header h2 {
+  color: #fff;
+}
+
+.vsl-card {
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+  padding: 12px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 8px 60px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.06);
+}
+
+.vsl-video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0a0a0a;
+  cursor: pointer;
+}
+
+.vsl-video__placeholder {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #0a0a0a 0%, #111 50%, #0a0a0a 100%);
+}
+
+.vsl-video__grid-bg {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(201,168,76,0.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: radial-gradient(ellipse at center, black 20%, transparent 70%);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 20%, transparent 70%);
+}
+
+.vsl-video__iframe-wrap {
+  position: absolute;
+  inset: 0;
+}
+
+.vsl-video__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  box-shadow: 0 0 60px rgba(201,168,76,0.3), 0 0 120px rgba(201,168,76,0.1);
+  transition: all var(--transition);
+  cursor: pointer;
+}
+
+.vsl-video__play svg {
+  width: 32px;
+  height: 32px;
+  margin-left: 4px;
+}
+
+.vsl-video__play:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+  box-shadow: 0 0 80px rgba(201,168,76,0.4), 0 0 160px rgba(201,168,76,0.15);
+}
+
+.vsl-video.playing .vsl-video__play {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.vsl-subtext {
+  margin-top: 24px;
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.5) !important;
+}
+
+/* --- Service Card Link --- */
+.service-card__link {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  transition: gap var(--transition);
+  position: relative;
+  z-index: 1;
+}
+
+a.service-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* --- Service Item Learn More --- */
+.service-item__learn-more {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(29,29,31,0.4);
+  transition: color var(--transition);
+}
+
+.service-item__learn-more:hover {
+  color: var(--gold);
+}
+
+.section--dark .service-item__learn-more {
+  color: rgba(255,255,255,0.3);
+}
+
+.section--dark .service-item__learn-more:hover {
+  color: var(--gold);
+}
+
+/* --- Client Growth Cards --- */
+.growth-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.growth-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.growth-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 36px 32px;
+  position: relative;
+  overflow: hidden;
+  transition: all var(--transition);
+}
+
+.growth-card:hover {
+  border-color: rgba(201,168,76,0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+}
+
+.growth-card__industry {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 24px;
+}
+
+.growth-card__metrics {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.growth-card__metric {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.growth-card__metric-label {
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+  min-width: 100px;
+}
+
+.growth-card__metric-before {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.35);
+  min-width: 60px;
+  text-align: right;
+}
+
+.growth-card__metric-arrow {
+  width: 20px;
+  height: 20px;
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+.growth-card__metric-arrow svg {
+  width: 100%;
+  height: 100%;
+}
+
+.growth-card__metric-after {
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.growth-card__chart {
+  margin-top: 8px;
+  height: 40px;
+  opacity: 0.6;
+}
+
+.growth-card__chart-svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* --- Dashboard Mockup --- */
+.dashboard-mockup {
+  background: #111;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.4);
+}
+
+.dashboard-mockup__bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  background: rgba(255,255,255,0.04);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.dashboard-mockup__dots {
+  display: flex;
+  gap: 6px;
+}
+
+.dashboard-mockup__dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.12);
+}
+
+.dashboard-mockup__dots span:first-child { background: #ff5f57; }
+.dashboard-mockup__dots span:nth-child(2) { background: #ffbd2e; }
+.dashboard-mockup__dots span:nth-child(3) { background: #28c840; }
+
+.dashboard-mockup__title {
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.3);
+}
+
+.dashboard-mockup__body {
+  display: flex;
+  min-height: 180px;
+}
+
+.dashboard-mockup__sidebar {
+  width: 48px;
+  flex-shrink: 0;
+  background: rgba(255,255,255,0.02);
+  border-right: 1px solid rgba(255,255,255,0.04);
+  padding: 12px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dashboard-mockup__nav-item {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: rgba(255,255,255,0.06);
+}
+
+.dashboard-mockup__nav-item--active {
+  background: var(--gold);
+  opacity: 0.6;
+}
+
+.dashboard-mockup__main {
+  flex: 1;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dashboard-mockup__stats-row {
+  display: flex;
+  gap: 8px;
+}
+
+.dashboard-mockup__stat-box {
+  flex: 1;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.04);
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.dashboard-mockup__stat-label {
+  width: 60%;
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(255,255,255,0.08);
+  margin-bottom: 8px;
+}
+
+.dashboard-mockup__stat-value {
+  height: 6px;
+  border-radius: 3px;
+}
+
+.dashboard-mockup__chart {
+  height: 60px;
+  background: rgba(255,255,255,0.02);
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.dashboard-mockup__chart-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.dashboard-mockup__rows {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.dashboard-mockup__row {
+  display: flex;
+  gap: 8px;
+}
+
+.dashboard-mockup__row span {
+  display: block;
+  height: 5px;
+  border-radius: 2px;
+  background: rgba(255,255,255,0.05);
+}
+
+/* --- SaaS Grid Dot Pattern (decorative bg for service overview) --- */
+.services-overview__grid {
+  position: relative;
+}
+
+.services-overview__grid::before {
+  content: '';
+  position: absolute;
+  inset: -40px;
+  background-image: radial-gradient(rgba(201,168,76,0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+  mask-image: radial-gradient(ellipse at center, black 20%, transparent 60%);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 20%, transparent 60%);
+  z-index: 0;
+}
+
+/* --- Glowing connector lines between service cards --- */
+.services-overview__grid::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  right: 5%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(201,168,76,0.12), transparent);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* --- Floating abstract shapes for hero sections --- */
+.shader-hero::before {
+  content: '';
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  width: 200px;
+  height: 200px;
+  border: 1px solid rgba(201,168,76,0.08);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+  animation: float-shape 10s ease-in-out infinite;
+}
+
+.shader-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 15%;
+  left: 8%;
+  width: 120px;
+  height: 120px;
+  border: 1px solid rgba(201,168,76,0.06);
+  transform: rotate(45deg);
+  pointer-events: none;
+  z-index: 1;
+  animation: float-shape 12s ease-in-out infinite 2s;
+}
+
+@keyframes float-shape {
+  0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.5; }
+  50% { transform: translateY(-20px) rotate(5deg); opacity: 1; }
+}
+
+/* --- Circuit/Node Graphics --- */
+.page-hero::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  width: 240px;
+  height: 240px;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(201,168,76,0.15) 2px, transparent 2px),
+    radial-gradient(circle at 80% 20%, rgba(201,168,76,0.1) 2px, transparent 2px),
+    radial-gradient(circle at 50% 50%, rgba(201,168,76,0.12) 2px, transparent 2px),
+    radial-gradient(circle at 20% 80%, rgba(201,168,76,0.1) 2px, transparent 2px),
+    radial-gradient(circle at 80% 80%, rgba(201,168,76,0.15) 2px, transparent 2px);
+  background-size: 100% 100%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+/* --- Service Detail Page Styles --- */
+.service-detail__header {
+  margin-bottom: 48px;
+}
+
+.service-detail__header h2 {
+  margin-top: 8px;
+}
+
+.service-detail__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.service-detail__item {
+  background: #fff;
+  border: 1px solid #e8e8ed;
+  border-radius: 16px;
+  padding: 36px 32px;
+  transition: all var(--transition);
+  position: relative;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+}
+
+.service-detail__item:hover {
+  border-color: rgba(201,168,76,0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+}
+
+.service-detail__icon {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 20px;
+  color: var(--gold);
+}
+
+.service-detail__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.service-detail__item h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #1d1d1f;
+}
+
+.service-detail__item p {
+  font-size: 0.88rem;
+  color: #6e6e73;
+  line-height: 1.7;
+}
+
+/* How It Works Steps */
+.service-detail__steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.service-detail__step {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 40px 32px;
+  text-align: center;
+  transition: all var(--transition);
+}
+
+.service-detail__step:hover {
+  border-color: rgba(201,168,76,0.3);
+  transform: translateY(-4px);
+}
+
+.service-detail__step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+  color: #000;
+  font-weight: 800;
+  font-size: 0.85rem;
+  margin-bottom: 24px;
+}
+
+.service-detail__step h3 {
+  font-size: 1.1rem;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.service-detail__step p {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.7;
+}
+
+/* Why SYNQ OS Differentiators */
+.service-detail__diff {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 48px;
+}
+
+/* --- Responsive for New Sections --- */
+@media (max-width: 1024px) {
+  .growth-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-detail__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-detail__steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .service-detail__diff {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .growth-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .growth-card__metric {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .growth-card__metric-label {
+    min-width: 100%;
+  }
+
+  .vsl-card {
+    padding: 8px;
+  }
+
+  .vsl-video__play {
+    width: 60px;
+    height: 60px;
+  }
+
+  .vsl-video__play svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .service-detail__grid,
+  .service-detail__steps,
+  .service-detail__diff {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-mockup__body {
+    min-height: 140px;
+  }
+
+  .dashboard-mockup__sidebar {
+    width: 36px;
+  }
+
+  .service-item__learn-more {
+    display: block;
+    margin-left: 0;
+    margin-top: 8px;
+  }
+
+  .page-hero::after {
+    display: none;
+  }
+
+  .shader-hero::before,
+  .shader-hero::after {
+    display: none;
+  }
+}
