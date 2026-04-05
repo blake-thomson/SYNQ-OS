@@ -2165,9 +2165,7 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.96);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    background: #fff;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -2191,6 +2189,11 @@ p {
   .nav__toggle {
     display: flex;
     z-index: 1001;
+    position: relative;
+  }
+
+  .nav.scrolled .nav__toggle span {
+    background-color: #1d1d1f;
   }
 
   .stats__grid {
