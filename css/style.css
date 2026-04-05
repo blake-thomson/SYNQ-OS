@@ -2774,6 +2774,34 @@ a.service-card {
   color: var(--gold);
 }
 
+/* === Light-section overrides === */
+.section--elevated .case-study-mini {
+  background: #fff;
+  border-color: #e8e8ed;
+}
+
+.section--elevated .case-study-mini::before {
+  background: linear-gradient(to bottom, var(--gold), #e8e8ed);
+}
+
+.section--elevated .case-study-mini__text {
+  color: #424245;
+}
+
+.section--elevated .case-study-mini__attr {
+  color: var(--gold-dark);
+}
+
+.section--elevated h2,
+.section--elevated h3,
+.section--elevated h4 {
+  color: #1d1d1f;
+}
+
+.section--elevated p {
+  color: #424245;
+}
+
 /* === Service Hero Scroll Indicator === */
 .service-hero__scroll-indicator {
   position: absolute;
