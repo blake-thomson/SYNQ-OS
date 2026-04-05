@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SEO — SYNQ OS</title>
-  <meta name="description" content="Dominate local and national search results with SYNQ OS SEO services. Long-term organic visibility that compounds over time." />
+  <meta name="description" content="Dominate local and national search results with SEO that compounds over time. On-page optimization, local SEO, content, citations, and link building by SYNQ OS." />
   <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
@@ -30,23 +30,59 @@
     </div>
   </nav>
 
-  <!-- PAGE HERO -->
-  <section class="page-hero">
-    <div class="page-hero__grid"></div>
-    <div class="page-hero__line"></div>
+  <!-- HERO -->
+  <section class="shader-hero service-hero" id="shaderHero">
+    <canvas class="shader-hero__canvas" id="shaderCanvas"></canvas>
+    <div class="shader-hero__content">
+      <div class="shader-hero__badge shader-hero__fade-in">
+        <span class="shader-hero__badge-icon">&#10038;</span>
+        Search Engine Optimization
+      </div>
+      <h1 class="shader-hero__h1">
+        <span class="shader-hero__line1 shader-hero__fade-in shader-hero__delay-1">Get Found on Google.</span>
+        <span class="shader-hero__line2 shader-hero__fade-in shader-hero__delay-2">Stop Paying for Every Click.</span>
+      </h1>
+      <p class="shader-hero__sub shader-hero__fade-in shader-hero__delay-3">We build long-term organic visibility that brings you qualified leads every month — without spending another dollar on ads. Local SEO, on-page optimization, content, and link building that compounds over time.</p>
+      <div class="shader-hero__actions shader-hero__fade-in shader-hero__delay-4">
+        <a href="../contact.html" class="btn btn--gold">Book a Strategy Call <span class="btn__arrow">&rarr;</span></a>
+        <a href="#included" class="btn btn--outline" style="color:#fff;border-color:rgba(255,255,255,.2);">See What's Included</a>
+      </div>
+    </div>
+    <div class="service-hero__scroll-indicator">
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- PROBLEM / PAIN POINTS -->
+  <section class="pain-section">
     <div class="container">
-      <div class="page-hero__label">Service Detail</div>
-      <h1>Search Engine<br /><em>Optimization</em></h1>
-      <p class="page-hero__sub">Dominate local and national search results. We build long-term organic visibility that compounds over time.</p>
+      <div class="pain-section__grid">
+        <div class="reveal-left">
+          <span class="label">Sound Familiar?</span>
+          <h2 style="margin-bottom:36px;">Your Competitors Are Showing Up. You're Not.</h2>
+          <ul class="pain-list">
+            <li>When someone Googles what you do in your area, your competitors show up on page one. You're buried on page three — or nowhere at all.</li>
+            <li>You're paying for every single lead through ads because organic traffic is basically zero. The moment you stop spending, the leads stop coming.</li>
+            <li>Your Google Business Profile is incomplete, has outdated info, or barely any reviews. You're invisible in the map pack where most local searches convert.</li>
+            <li>You tried SEO before with another agency and saw no results. They sent you a monthly report full of jargon but your phone never rang more.</li>
+          </ul>
+        </div>
+        <div class="reveal-right">
+          <div class="pain-stat">
+            <div class="pain-stat__number">75%</div>
+            <div class="pain-stat__caption">of people never scroll past the first page of Google. If you're not there, you don't exist.</div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- WHAT'S INCLUDED -->
-  <section class="section">
+  <section class="section" id="included">
     <div class="container">
-      <div class="service-detail__header reveal">
-        <span class="label">What's Included</span>
-        <h2>A Complete SEO Strategy</h2>
+      <div class="service-detail__header reveal" style="text-align:center;">
+        <span class="label label--center">What's Included</span>
+        <h2>Everything You Get With SEO</h2>
       </div>
       <div class="service-detail__grid stagger-children">
         <div class="service-detail__item">
@@ -54,42 +90,56 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
           </div>
           <h4>Keyword Research & Strategy</h4>
-          <p>Deep keyword research targeting high-intent search terms your customers actually use.</p>
+          <p>Deep research into the exact terms your customers are searching. We identify high-intent keywords with real traffic volume and map them to your service pages for maximum impact.</p>
         </div>
         <div class="service-detail__item">
           <div class="service-detail__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8M16 17H8M10 9H8"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
           </div>
           <h4>On-Page Optimization</h4>
-          <p>Title tags, meta descriptions, headers, content optimization, and schema markup for every page.</p>
-        </div>
-        <div class="service-detail__item">
-          <div class="service-detail__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-          </div>
-          <h4>Link Building</h4>
-          <p>Strategic backlink acquisition from relevant, high-authority domains to boost your rankings.</p>
+          <p>Title tags, meta descriptions, header structure, internal linking, image optimization, and schema markup. Every page on your site is technically optimized to rank.</p>
         </div>
         <div class="service-detail__item">
           <div class="service-detail__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
           </div>
-          <h4>Local SEO & Citations</h4>
-          <p>Google Business Profile optimization, local citations, and map pack ranking strategies.</p>
+          <h4>Local SEO & Map Pack</h4>
+          <p>Google Business Profile optimization, local citations, NAP consistency, and geo-targeted content. We put you in the map pack where local customers are searching and converting.</p>
         </div>
         <div class="service-detail__item">
           <div class="service-detail__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20V10M18 20V4M6 20v-4"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
           </div>
-          <h4>Content Strategy</h4>
-          <p>Blog posts, service pages, and content clusters that establish topical authority and drive traffic.</p>
+          <h4>Content Strategy & Creation</h4>
+          <p>SEO-optimized blog posts, service pages, and location pages written by real humans. Content that ranks, builds authority, and actually answers what your customers are asking.</p>
+        </div>
+        <div class="service-detail__item">
+          <div class="service-detail__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+          </div>
+          <h4>Link Building & Authority</h4>
+          <p>Strategic backlink acquisition from relevant, authoritative sources. Guest posts, local directories, industry citations, and digital PR that build your domain authority month over month.</p>
+        </div>
+        <div class="service-detail__item">
+          <div class="service-detail__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <h4>Technical SEO Audit</h4>
+          <p>Site speed, crawlability, indexation, mobile-friendliness, Core Web Vitals — we fix the technical issues that are silently killing your rankings and costing you traffic.</p>
         </div>
         <div class="service-detail__item">
           <div class="service-detail__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
           </div>
-          <h4>Monthly Reporting</h4>
-          <p>Transparent monthly reports showing rankings, traffic, leads, and ROI from your SEO investment.</p>
+          <h4>Monthly Reporting & Analytics</h4>
+          <p>Clear, jargon-free monthly reports showing keyword rankings, traffic growth, lead attribution, and ROI. You'll always know exactly where you stand and what's working.</p>
+        </div>
+        <div class="service-detail__item">
+          <div class="service-detail__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h4>Competitor Analysis</h4>
+          <p>We reverse-engineer what your top competitors are doing — their keywords, their backlinks, their content strategy — and build a plan to outrank them systematically.</p>
         </div>
       </div>
     </div>
@@ -100,91 +150,116 @@
     <div class="container">
       <div class="service-detail__header reveal" style="text-align:center;">
         <span class="label label--center">How It Works</span>
-        <h2>The Path to Page One</h2>
+        <h2>From Invisible to Page One</h2>
       </div>
-      <div class="service-detail__steps stagger-children">
-        <div class="service-detail__step">
+      <div class="service-detail__steps--timeline stagger-children">
+        <div class="service-detail__step--timeline">
           <div class="service-detail__step-num">01</div>
-          <h3>Audit & Research</h3>
-          <p>Full technical audit, competitor analysis, and keyword research to build a data-driven SEO roadmap for your market.</p>
+          <div class="service-detail__step--timeline-content">
+            <h3>Comprehensive SEO Audit</h3>
+            <p>We start with a full audit of your current site — technical health, on-page optimization, backlink profile, and competitive landscape. This tells us exactly where the opportunities are and what's holding you back.</p>
+          </div>
         </div>
-        <div class="service-detail__step">
+        <div class="service-detail__step--timeline">
           <div class="service-detail__step-num">02</div>
-          <h3>Optimize & Create</h3>
-          <p>On-page optimizations, content creation, technical fixes, and citation building -- executed monthly with measurable goals.</p>
+          <div class="service-detail__step--timeline-content">
+            <h3>Strategy & Keyword Mapping</h3>
+            <p>Based on the audit, we build a prioritized SEO roadmap. High-impact keywords are mapped to specific pages. We identify quick wins for early momentum and long-term targets for sustained growth.</p>
+          </div>
         </div>
-        <div class="service-detail__step">
+        <div class="service-detail__step--timeline">
           <div class="service-detail__step-num">03</div>
-          <h3>Rank & Compound</h3>
-          <p>Watch your rankings climb, organic traffic grow, and leads flow in -- compounding month over month as authority builds.</p>
+          <div class="service-detail__step--timeline-content">
+            <h3>Optimize, Create & Build</h3>
+            <p>We execute — on-page fixes, new content creation, local SEO setup, and link building all happening in parallel. Every month we're pushing your site higher with a coordinated, multi-channel SEO effort.</p>
+          </div>
+        </div>
+        <div class="service-detail__step--timeline">
+          <div class="service-detail__step-num">04</div>
+          <div class="service-detail__step--timeline-content">
+            <h3>Report, Refine & Scale</h3>
+            <p>Monthly reporting shows exactly what moved and why. We refine the strategy based on ranking data, traffic patterns, and conversion metrics. As you climb, we expand into new keywords and markets.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- WHY SYNQ OS -->
-  <section class="section">
-    <div class="container">
-      <div class="service-detail__header reveal" style="text-align:center;">
-        <span class="label label--center">Why SYNQ OS</span>
-        <h2>SEO That Actually Moves the Needle</h2>
-      </div>
-      <div class="service-detail__diff stagger-children">
-        <div class="value-item">
-          <h4>No Vanity Metrics</h4>
-          <p>We measure leads and revenue, not just impressions. Your SEO strategy is tied to real business growth.</p>
-        </div>
-        <div class="value-item">
-          <h4>Local + National</h4>
-          <p>Whether you serve one city or the entire country, we build the strategy that matches your market.</p>
-        </div>
-        <div class="value-item">
-          <h4>Integrated Approach</h4>
-          <p>Your SEO works with your website, CRM, and ads -- not in a silo. One connected growth engine.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- RESULTS -->
+  <!-- RESULTS / PROOF -->
   <section class="section section--elevated">
     <div class="container">
       <div class="service-detail__header reveal" style="text-align:center;">
         <span class="label label--center">Results</span>
-        <h2>SEO Results</h2>
+        <h2>What Our SEO Clients See</h2>
       </div>
       <div class="results-stats stagger-children">
         <div class="result-stat">
-          <div class="result-stat__number"><span data-target="640">0</span><span>%</span></div>
-          <div class="result-stat__label">Organic Traffic Growth</div>
-        </div>
-        <div class="result-stat">
-          <div class="result-stat__number"><span data-target="1">0</span><span>#</span></div>
-          <div class="result-stat__label">Google Rankings Achieved</div>
-        </div>
-        <div class="result-stat">
-          <div class="result-stat__number"><span data-target="40">0</span><span>+</span></div>
-          <div class="result-stat__label">Organic Leads Per Month</div>
-        </div>
-        <div class="result-stat">
-          <div class="result-stat__number"><span data-target="4">0</span><span>mo</span></div>
+          <div class="result-stat__number"><span data-target="90">0</span><span>d</span></div>
           <div class="result-stat__label">Avg. Time to Page 1</div>
+        </div>
+        <div class="result-stat">
+          <div class="result-stat__number"><span data-target="640">0</span><span>%</span></div>
+          <div class="result-stat__label">Organic Traffic Increase</div>
+        </div>
+        <div class="result-stat">
+          <div class="result-stat__number"><span data-target="3">0</span><span>x</span></div>
+          <div class="result-stat__label">More Organic Leads</div>
+        </div>
+        <div class="result-stat">
+          <div class="result-stat__number"><span data-target="45">0</span><span>+</span></div>
+          <div class="result-stat__label">Keywords Ranked</div>
+        </div>
+      </div>
+      <div class="case-study-mini reveal">
+        <p class="case-study-mini__text">"A roofing company in Phoenix was completely invisible on Google — ranking for zero relevant keywords. We built a local SEO strategy with optimized service pages, location pages for each suburb, and a monthly content plan targeting high-intent searches. Within 90 days they ranked on page one for 'roof repair Phoenix' and 12 other key terms. Organic leads went from 2 per month to 34."</p>
+        <div class="case-study-mini__attr">Roofing Company &mdash; Phoenix, AZ</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--dark faq-section">
+    <div class="container">
+      <div class="service-detail__header reveal" style="text-align:center;">
+        <span class="label label--center">FAQ</span>
+        <h2>Common Questions About SEO</h2>
+      </div>
+      <div class="faq-section__grid">
+        <div class="faq-item reveal">
+          <div class="faq-item__q">How long does SEO take to work?</div>
+          <div class="faq-item__a">You'll typically see early movement within 30-60 days, with meaningful rankings and traffic increases by 90 days. SEO is a compounding asset — the longer you invest, the bigger the returns. Most clients see their strongest results at the 6-12 month mark.</div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-item__q">Can you guarantee page one rankings?</div>
+          <div class="faq-item__a">No ethical SEO provider can guarantee specific rankings — Google's algorithm changes constantly. What we can guarantee is a proven process, transparent reporting, and a track record of getting our clients to page one for their target keywords consistently.</div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-item__q">I tried SEO before and it didn't work. Why would this be different?</div>
+          <div class="faq-item__a">Most SEO failures come from agencies that focus on vanity metrics instead of revenue. We tie everything to leads and conversions. You'll see exactly which keywords are driving calls and form fills — not just impressions and clicks that don't pay the bills.</div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-item__q">Do I need SEO if I'm already running ads?</div>
+          <div class="faq-item__a">Absolutely. Ads give you immediate traffic but the moment you stop paying, it stops. SEO builds a permanent asset that generates leads for free, month after month. The best strategy is both working together — ads for now, SEO for long-term compounding growth.</div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-item__q">What's included in the monthly reporting?</div>
+          <div class="faq-item__a">Keyword ranking changes, organic traffic growth, lead attribution, backlink progress, content performance, and competitive benchmarks. We also include a plain-English summary of what we did, what moved, and what we're focusing on next month.</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
+  <!-- FINAL CTA -->
   <div class="cta-section">
     <div class="cta-section__glow"></div>
     <div class="container" style="position:relative;z-index:1;">
       <div class="reveal">
-        <span class="label label--center" style="margin-bottom:20px;">Ready to Rank?</span>
-        <h2>Let's Get You<br />to Page One</h2>
-        <p>Book a free strategy call and we'll audit your current SEO and show you what's possible.</p>
+        <span class="label label--center" style="margin-bottom:20px;">Ready to Dominate Google?</span>
+        <h2>Get Found. Get Leads.<br />Get Growing.</h2>
+        <p>Book a free strategy call and we'll audit your current SEO and show you exactly where the opportunities are.</p>
         <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
           <a href="../contact.html" class="btn btn--gold">Book Your Free Call <span class="btn__arrow">&rarr;</span></a>
-          <a href="../services.html" class="btn btn--outline" style="color:#fff;border-color:rgba(255,255,255,.15);">All Services <span class="btn__arrow">&rarr;</span></a>
+          <a href="../services.html" class="btn btn--outline" style="color:#fff;border-color:rgba(255,255,255,.15);">View All Services <span class="btn__arrow">&rarr;</span></a>
         </div>
       </div>
     </div>
@@ -207,6 +282,7 @@
             <li><a href="ads.html">Paid Ads</a></li>
             <li><a href="seo.html">SEO</a></li>
             <li><a href="automation.html">Automation</a></li>
+            <li><a href="reputation.html">Reputation</a></li>
             <li><a href="app-dev.html">App Development</a></li>
           </ul>
         </div>

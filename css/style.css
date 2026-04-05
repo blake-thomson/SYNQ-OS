@@ -2544,7 +2544,274 @@ a.service-card {
   margin-top: 48px;
 }
 
-/* --- Responsive for New Sections --- */
+/* How It Works — 4-step timeline layout */
+.service-detail__steps--timeline {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  margin-top: 48px;
+  position: relative;
+}
+
+.service-detail__steps--timeline::before {
+  content: '';
+  position: absolute;
+  left: 23px;
+  top: 48px;
+  bottom: 48px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--gold), rgba(201,168,76,0.15));
+}
+
+.service-detail__step--timeline {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 32px;
+  padding: 32px 0;
+  position: relative;
+}
+
+.service-detail__step--timeline .service-detail__step-num {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 0;
+}
+
+.service-detail__step--timeline-content h3 {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.service-detail__step--timeline-content p {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.8;
+  max-width: 560px;
+}
+
+/* === Service Landing Page: Pain Section === */
+.pain-section {
+  background: #000;
+  color: #fff;
+  padding: 120px 0;
+  position: relative;
+  overflow: clip;
+}
+
+.pain-section h2,
+.pain-section h3,
+.pain-section h4 {
+  color: #fff;
+}
+
+.pain-section p {
+  color: rgba(255,255,255,0.6);
+}
+
+.pain-section__grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.pain-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 24px;
+}
+
+.pain-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.7;
+}
+
+.pain-list li::before {
+  content: '';
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  margin-top: 10px;
+  background: #e74c3c;
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(231,76,60,0.4);
+}
+
+.pain-stat {
+  text-align: center;
+  padding: 60px 40px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 20px;
+}
+
+.pain-stat__number {
+  font-size: clamp(3.5rem, 6vw, 5rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pain-stat__caption {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.6;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+/* === FAQ Section === */
+.faq-section {
+  padding: 120px 0;
+  position: relative;
+  overflow: clip;
+}
+
+.faq-section__grid {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  padding: 32px 0;
+}
+
+.faq-item:first-child {
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.faq-item__q {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 14px;
+  cursor: default;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.faq-item__q::before {
+  content: '';
+  flex-shrink: 0;
+  width: 6px;
+  height: 6px;
+  background: var(--gold);
+  border-radius: 50%;
+}
+
+.faq-item__a {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.8;
+  padding-left: 18px;
+}
+
+/* Light-bg FAQ variant */
+.faq-section--light .faq-item {
+  border-color: #e8e8ed;
+}
+
+.faq-section--light .faq-item:first-child {
+  border-color: #e8e8ed;
+}
+
+.faq-section--light .faq-item__q {
+  color: #1d1d1f;
+}
+
+.faq-section--light .faq-item__a {
+  color: #6e6e73;
+}
+
+/* === Case Study Mini Card === */
+.case-study-mini {
+  max-width: 700px;
+  margin: 48px auto 0;
+  padding: 40px 48px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  position: relative;
+}
+
+.case-study-mini::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 24px;
+  bottom: 24px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--gold), transparent);
+  border-radius: 2px;
+}
+
+.case-study-mini__text {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.8;
+  font-style: italic;
+  margin-bottom: 16px;
+}
+
+.case-study-mini__attr {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+/* === Service Hero Scroll Indicator === */
+.service-hero__scroll-indicator {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  opacity: 0.35;
+  z-index: 10;
+  animation: shader-fade-up 0.7s cubic-bezier(0.4,0,0.2,1) forwards;
+  animation-delay: 0.9s;
+  opacity: 0;
+}
+
+.service-hero__scroll-indicator span {
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+}
+
+.service-hero__scroll-indicator::after {
+  content: '';
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(to bottom, var(--gold), transparent);
+  animation: scroll-pulse 2s ease-in-out infinite;
+}
+
+/* === Service Hero (reusing shader-hero with service-specific tweaks) === */
+.service-hero .shader-hero__content {
+  padding-top: 60px;
+}
+
+/* === Responsive for New Sections === */
 @media (max-width: 1024px) {
   .service-detail__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -2556,6 +2823,11 @@ a.service-card {
 
   .service-detail__diff {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .pain-section__grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
   }
 }
 
@@ -2574,5 +2846,38 @@ a.service-card {
 
   .shader-hero__vsl {
     margin-top: 28px;
+  }
+
+  .pain-section {
+    padding: 72px 0;
+  }
+
+  .pain-section__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .pain-stat {
+    padding: 40px 24px;
+  }
+
+  .faq-section {
+    padding: 72px 0;
+  }
+
+  .faq-item {
+    padding: 24px 0;
+  }
+
+  .service-detail__steps--timeline::before {
+    left: 23px;
+  }
+
+  .case-study-mini {
+    padding: 28px 24px;
+  }
+
+  .service-hero__scroll-indicator {
+    display: none;
   }
 }

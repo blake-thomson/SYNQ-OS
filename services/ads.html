@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Paid Advertising — SYNQ OS</title>
-  <meta name="description" content="Meta and Google Ads managed for maximum ROI. Data-driven campaigns that put your brand in front of buyers. SYNQ OS paid advertising." />
+  <meta name="description" content="Meta and Google Ads managed for maximum ROI. Data-driven campaigns that put your brand in front of buyers and turn ad spend into revenue. By SYNQ OS." />
   <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
@@ -30,66 +30,116 @@
     </div>
   </nav>
 
-  <!-- PAGE HERO -->
-  <section class="page-hero">
-    <div class="page-hero__grid"></div>
-    <div class="page-hero__line"></div>
+  <!-- HERO -->
+  <section class="shader-hero service-hero" id="shaderHero">
+    <canvas class="shader-hero__canvas" id="shaderCanvas"></canvas>
+    <div class="shader-hero__content">
+      <div class="shader-hero__badge shader-hero__fade-in">
+        <span class="shader-hero__badge-icon">&#10038;</span>
+        Paid Advertising
+      </div>
+      <h1 class="shader-hero__h1">
+        <span class="shader-hero__line1 shader-hero__fade-in shader-hero__delay-1">Turn Ad Spend Into</span>
+        <span class="shader-hero__line2 shader-hero__fade-in shader-hero__delay-2">Predictable Revenue.</span>
+      </h1>
+      <p class="shader-hero__sub shader-hero__fade-in shader-hero__delay-3">We manage Meta and Google Ads campaigns that don't just drive clicks — they drive qualified leads, booked appointments, and measurable ROI. Every dollar tracked, every result reported.</p>
+      <div class="shader-hero__actions shader-hero__fade-in shader-hero__delay-4">
+        <a href="../contact.html" class="btn btn--gold">Book a Strategy Call <span class="btn__arrow">&rarr;</span></a>
+        <a href="#included" class="btn btn--outline" style="color:#fff;border-color:rgba(255,255,255,.2);">See What's Included</a>
+      </div>
+    </div>
+    <div class="service-hero__scroll-indicator">
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- PROBLEM / PAIN POINTS -->
+  <section class="pain-section">
     <div class="container">
-      <div class="page-hero__label">Service Detail</div>
-      <h1>Paid Advertising<br /><em>Meta + Google</em></h1>
-      <p class="page-hero__sub">Data-driven ad campaigns on Meta and Google that put your brand in front of buyers and maximize your return on ad spend.</p>
+      <div class="pain-section__grid">
+        <div class="reveal-left">
+          <span class="label">Sound Familiar?</span>
+          <h2 style="margin-bottom:36px;">You're Spending on Ads. But Where's the Return?</h2>
+          <ul class="pain-list">
+            <li>You've thrown thousands at Facebook and Google Ads with little to show for it. Clicks come in, but they don't turn into customers.</li>
+            <li>Your current agency sends reports full of impressions and reach — but nobody can tell you the actual cost per booked appointment or closed deal.</li>
+            <li>You have no idea which ads, audiences, or platforms are actually producing revenue. There's no real tracking in place.</li>
+            <li>Your landing pages don't match your ads. People click, land on a generic page, get confused, and leave. You're paying for traffic that bounces.</li>
+          </ul>
+        </div>
+        <div class="reveal-right">
+          <div class="pain-stat">
+            <div class="pain-stat__number">72%</div>
+            <div class="pain-stat__caption">of small businesses say they waste money on ads because they can't track what's actually working.</div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- WHAT'S INCLUDED -->
-  <section class="section">
+  <section class="section" id="included">
     <div class="container">
-      <div class="service-detail__header reveal">
-        <span class="label">What's Included</span>
-        <h2>Full-Service Ad Management</h2>
+      <div class="service-detail__header reveal" style="text-align:center;">
+        <span class="label label--center">What's Included</span>
+        <h2>Everything You Get With Paid Ads</h2>
       </div>
       <div class="service-detail__grid stagger-children">
         <div class="service-detail__item">
           <div class="service-detail__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
           </div>
-          <h4>Meta Ads (Facebook & Instagram)</h4>
-          <p>Campaign strategy, creative direction, audience targeting, A/B testing, and ongoing optimization.</p>
-        </div>
-        <div class="service-detail__item">
-          <div class="service-detail__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-          </div>
-          <h4>Google Search & PMax Ads</h4>
-          <p>Keyword research, bidding strategy, ad copy, and Performance Max campaigns for maximum reach.</p>
-        </div>
-        <div class="service-detail__item">
-          <div class="service-detail__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20V10M18 20V4M6 20v-4"/></svg>
-          </div>
-          <h4>Conversion Tracking</h4>
-          <p>Full pixel setup, conversion API integration, and attribution tracking so every dollar is accounted for.</p>
-        </div>
-        <div class="service-detail__item">
-          <div class="service-detail__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-          </div>
-          <h4>Landing Page Alignment</h4>
-          <p>We ensure your ads and landing pages work together for maximum quality scores and conversion rates.</p>
-        </div>
-        <div class="service-detail__item">
-          <div class="service-detail__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-          </div>
-          <h4>A/B Testing & Creative</h4>
-          <p>Continuous testing of headlines, images, audiences, and ad formats to find top performers.</p>
+          <h4>Campaign Strategy & Build</h4>
+          <p>Full campaign architecture designed around your goals — lead gen, appointments, or sales. We build the account structure, audiences, and creative strategy from scratch for maximum performance.</p>
         </div>
         <div class="service-detail__item">
           <div class="service-detail__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
           </div>
-          <h4>Weekly Reporting</h4>
-          <p>Transparent weekly reports showing spend, leads, cost per lead, and ROAS with clear action items.</p>
+          <h4>Meta Ads Management</h4>
+          <p>Facebook and Instagram campaigns optimized for conversions, not vanity metrics. Lookalike audiences, retargeting, and creative testing that drive qualified leads at scale.</p>
+        </div>
+        <div class="service-detail__item">
+          <div class="service-detail__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          </div>
+          <h4>Google Ads Management</h4>
+          <p>Search, display, and local service ads that capture high-intent buyers when they're actively looking for what you sell. Keyword targeting, bid management, and negative keyword optimization included.</p>
+        </div>
+        <div class="service-detail__item">
+          <div class="service-detail__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h4>Ad Creative & Copy</h4>
+          <p>Scroll-stopping ad creative and persuasive copy written by marketers who understand direct response. We test multiple variations and scale what works.</p>
+        </div>
+        <div class="service-detail__item">
+          <div class="service-detail__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <h4>Landing Page Alignment</h4>
+          <p>Every ad points to a dedicated, message-matched landing page built for conversion. No more sending paid traffic to your homepage. The landing page matches the ad promise and drives action.</p>
+        </div>
+        <div class="service-detail__item">
+          <div class="service-detail__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <h4>Conversion Tracking & Attribution</h4>
+          <p>Full pixel setup, UTM tracking, and CRM integration so every lead is attributed to the exact ad, audience, and campaign that generated it. Know your true cost per lead and cost per acquisition.</p>
+        </div>
+        <div class="service-detail__item">
+          <div class="service-detail__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h4>Audience Building & Retargeting</h4>
+          <p>Custom audiences, lookalikes, and retargeting funnels that keep your brand in front of warm prospects until they're ready to buy. We build audiences that improve over time as your data grows.</p>
+        </div>
+        <div class="service-detail__item">
+          <div class="service-detail__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg>
+          </div>
+          <h4>Weekly Reporting & Optimization</h4>
+          <p>You get weekly performance reports and bi-weekly strategy calls. No black boxes. You always know what's running, what's working, and what we're testing next.</p>
         </div>
       </div>
     </div>
@@ -100,91 +150,116 @@
     <div class="container">
       <div class="service-detail__header reveal" style="text-align:center;">
         <span class="label label--center">How It Works</span>
-        <h2>From Ad Spend to Revenue</h2>
+        <h2>From Strategy to Scale in 4 Steps</h2>
       </div>
-      <div class="service-detail__steps stagger-children">
-        <div class="service-detail__step">
+      <div class="service-detail__steps--timeline stagger-children">
+        <div class="service-detail__step--timeline">
           <div class="service-detail__step-num">01</div>
-          <h3>Research & Strategy</h3>
-          <p>We research your market, competitors, and ideal customer -- then build a campaign strategy designed to maximize your budget.</p>
+          <div class="service-detail__step--timeline-content">
+            <h3>Audit & Market Research</h3>
+            <p>We analyze your current ad accounts (if any), your competitors' strategies, and your market opportunity. We identify the highest-ROI audiences, keywords, and messaging angles before spending a dollar.</p>
+          </div>
         </div>
-        <div class="service-detail__step">
+        <div class="service-detail__step--timeline">
           <div class="service-detail__step-num">02</div>
-          <h3>Launch & Test</h3>
-          <p>We launch campaigns, test multiple creatives and audiences, and rapidly identify what drives the best results.</p>
+          <div class="service-detail__step--timeline-content">
+            <h3>Campaign Build & Creative</h3>
+            <p>We build out the full campaign architecture — ad sets, audiences, creative variations, landing pages, and tracking. Everything is designed as a cohesive system where ads, pages, and follow-up work together.</p>
+          </div>
         </div>
-        <div class="service-detail__step">
+        <div class="service-detail__step--timeline">
           <div class="service-detail__step-num">03</div>
-          <h3>Scale & Optimize</h3>
-          <p>Double down on winners, cut losers, and scale your ad spend profitably as we find your optimal ROAS.</p>
+          <div class="service-detail__step--timeline-content">
+            <h3>Launch & Test</h3>
+            <p>We launch with a structured testing framework — multiple ad variations, audiences, and offers running simultaneously. Within the first 2 weeks, we identify what's working and kill what isn't.</p>
+          </div>
+        </div>
+        <div class="service-detail__step--timeline">
+          <div class="service-detail__step-num">04</div>
+          <div class="service-detail__step--timeline-content">
+            <h3>Optimize & Scale</h3>
+            <p>Once we find winning combinations, we scale spend into them aggressively. Continuous optimization of bids, audiences, creative, and landing pages keeps ROAS climbing month over month.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- WHY SYNQ OS -->
-  <section class="section">
-    <div class="container">
-      <div class="service-detail__header reveal" style="text-align:center;">
-        <span class="label label--center">Why SYNQ OS</span>
-        <h2>Ads That Generate Revenue, Not Vanity</h2>
-      </div>
-      <div class="service-detail__diff stagger-children">
-        <div class="value-item">
-          <h4>Full-Funnel Approach</h4>
-          <p>We manage ads + landing pages + follow-up. Your ad spend connects directly to booked appointments.</p>
-        </div>
-        <div class="value-item">
-          <h4>No Long-Term Contracts</h4>
-          <p>We earn your business every month. Results speak louder than lock-in agreements.</p>
-        </div>
-        <div class="value-item">
-          <h4>Transparent Reporting</h4>
-          <p>You see exactly where every dollar goes, what it produces, and what we're doing next.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- RESULTS -->
+  <!-- RESULTS / PROOF -->
   <section class="section section--elevated">
     <div class="container">
       <div class="service-detail__header reveal" style="text-align:center;">
         <span class="label label--center">Results</span>
-        <h2>Paid Advertising Results</h2>
+        <h2>What Our Ads Clients See</h2>
       </div>
       <div class="results-stats stagger-children">
         <div class="result-stat">
-          <div class="result-stat__number"><span data-target="8">0</span><span>x</span></div>
-          <div class="result-stat__label">Return on Ad Spend</div>
+          <div class="result-stat__number"><span data-target="8" data-suffix=".4x">0</span></div>
+          <div class="result-stat__label">Avg. ROAS</div>
         </div>
         <div class="result-stat">
-          <div class="result-stat__number"><span data-target="62">0</span><span>%</span></div>
-          <div class="result-stat__label">Lower Cost Per Lead</div>
+          <div class="result-stat__number"><span data-prefix="$" data-target="12">0</span></div>
+          <div class="result-stat__label">Avg. Cost Per Lead</div>
         </div>
         <div class="result-stat">
           <div class="result-stat__number"><span data-target="312">0</span><span>%</span></div>
-          <div class="result-stat__label">More Bookings</div>
+          <div class="result-stat__label">Booking Increase</div>
         </div>
         <div class="result-stat">
-          <div class="result-stat__number"><span data-target="30">0</span><span>d</span></div>
-          <div class="result-stat__label">To Positive ROI</div>
+          <div class="result-stat__number"><span data-prefix="$" data-target="2">0</span><span>M+</span></div>
+          <div class="result-stat__label">Total Ad Spend Managed</div>
+        </div>
+      </div>
+      <div class="case-study-mini reveal">
+        <p class="case-study-mini__text">"A solar installation company was spending $8,000/month on Google Ads with a previous agency and getting leads at $85 each — most of which were unqualified. We restructured their campaigns, built dedicated landing pages for each service area, and implemented proper conversion tracking. Within 60 days, cost per qualified lead dropped to $14 and bookings increased 312%. Same budget, completely different results."</p>
+        <div class="case-study-mini__attr">Solar Installation Company &mdash; Southwest Region</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--dark faq-section">
+    <div class="container">
+      <div class="service-detail__header reveal" style="text-align:center;">
+        <span class="label label--center">FAQ</span>
+        <h2>Common Questions About Paid Ads</h2>
+      </div>
+      <div class="faq-section__grid">
+        <div class="faq-item reveal">
+          <div class="faq-item__q">How much should I spend on ads?</div>
+          <div class="faq-item__a">It depends on your market, competition, and goals. Most of our clients start with $2,000-$5,000/month in ad spend and scale from there as we prove ROI. We'll recommend a budget during your strategy call based on your specific situation.</div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-item__q">Should I do Meta Ads or Google Ads?</div>
+          <div class="faq-item__a">It depends on your business. Google Ads captures people actively searching for your service (high intent). Meta Ads reaches people who fit your ideal customer profile but aren't actively searching (demand generation). Most service businesses benefit from both.</div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-item__q">How fast will I see results?</div>
+          <div class="faq-item__a">You'll typically see leads within the first 1-2 weeks of launch. The first 30 days are about testing and finding winning combinations. By month 2-3, campaigns are optimized and performance is scaling. Unlike SEO, ads deliver immediate traffic.</div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-item__q">What makes you different from other ad agencies?</div>
+          <div class="faq-item__a">Transparency and integration. We don't just manage ads — we build the entire system: ads, landing pages, CRM integration, and follow-up automation. You see every dollar spent and every lead generated. No hidden fees, no vague reporting.</div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-item__q">Do you handle the creative or do I need to provide it?</div>
+          <div class="faq-item__a">We handle everything — ad copy, image selection, video concepts, and landing page design. If you have existing brand assets, we'll work with them. If not, we create everything from scratch as part of the service.</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
+  <!-- FINAL CTA -->
   <div class="cta-section">
     <div class="cta-section__glow"></div>
     <div class="container" style="position:relative;z-index:1;">
       <div class="reveal">
-        <span class="label label--center" style="margin-bottom:20px;">Ready to Scale Your Ads?</span>
-        <h2>Let's Make Your<br />Ad Spend Work</h2>
-        <p>Book a free strategy call and we'll show you how to turn ad spend into predictable revenue.</p>
+        <span class="label label--center" style="margin-bottom:20px;">Ready to Make Your Ads Actually Work?</span>
+        <h2>Stop Burning Budget.<br />Start Scaling Revenue.</h2>
+        <p>Book a free strategy call and we'll audit your current ads or build a plan from scratch to start generating leads.</p>
         <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
           <a href="../contact.html" class="btn btn--gold">Book Your Free Call <span class="btn__arrow">&rarr;</span></a>
-          <a href="../services.html" class="btn btn--outline" style="color:#fff;border-color:rgba(255,255,255,.15);">All Services <span class="btn__arrow">&rarr;</span></a>
+          <a href="../services.html" class="btn btn--outline" style="color:#fff;border-color:rgba(255,255,255,.15);">View All Services <span class="btn__arrow">&rarr;</span></a>
         </div>
       </div>
     </div>
@@ -207,6 +282,7 @@
             <li><a href="ads.html">Paid Ads</a></li>
             <li><a href="seo.html">SEO</a></li>
             <li><a href="automation.html">Automation</a></li>
+            <li><a href="reputation.html">Reputation</a></li>
             <li><a href="app-dev.html">App Development</a></li>
           </ul>
         </div>
